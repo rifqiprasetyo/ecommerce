@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="payment.css">
+    <title>Tanah Abang Store</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="form-container">
+            <div class="card">
+                <h1>Card Information</h1>
+                <p>Masukkan nomor kartu debit yang anda gunakan</p>
+                <form action="">
+                    <div class="card-container">
+                        <div class="icon-container">
+                            <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                            <img src="./img/master.png" alt="" width="40" class="cardIcon">
+                        </div>
+                        <div class="info-card-number">
+                            <label>Nomor Kartu</label>
+                            <input type="text" value="0000 0000 0000">
+                        </div>
+                        <div class="info-card-date">
+                            <div style="width: 100%;">
+                                <label>Bulan dan Tanggal</label>
+                                <div style="display: flex; gap: 10px;">
+                                    <input type="text" value="00" class="input-date">
+                                    <span style="font-size: 16px; display: flex; align-items: center;">/</span>
+                                    <input type="text" value="00" class="input-date">
+                                </div>
+                            </div>
+                            <div style="width: 100%;">
+                                <label>CVV</label>
+                                <div>
+                                    <input type="password" value="123" class="input-cvv">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form">
+                <h1>Personal Information</h1>
+                <form action="" class="form-user card-container">
+                    <div class="user-input">
+                        <label>Name and Surname</label>
+                        <input type="text" placeholder="John Doe" class="payInput">
+                    </div>
+                    <div class="user-input">
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="+62 888712812" class="payInput">
+                    </div>
+                    <div class="user-input">
+                        <label>Address</label>
+                        <input type="text" placeholder="Jl. kelangsungan hidup" class="payInput">
+                    </div>
+                </form>
+            </div>
+            <div class="button">
+                <button class="button-style">Bayar</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
